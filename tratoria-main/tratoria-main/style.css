@@ -1,0 +1,249 @@
+body{
+    margin: auto;
+    
+    height: 780px;    
+}
+.font{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+.no-underline {
+    text-decoration: none; 
+    color: white; 
+}
+
+.no-underline:hover {
+    color: #009900;
+}
+
+.no-underline:visited {
+    color: none;
+}
+
+header{
+    border: solid 1px black;
+    color: white;
+    background-color: #990000;
+    justify-content: space-between;
+    align-items: baseline;
+    display: flex;
+    padding: 0px 10px 0px 10px;
+    
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+/*BANNIERE*/
+#banniere {
+    width: 100%;
+    color: white;
+    position: relative; 
+}
+
+#banniere img {
+    width: 100%;
+    max-width: 100%; 
+}
+
+#banniere h2 {
+    font-size: 110px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+#banniere button {
+    background-color: #990000;
+    font-size: 52px; 
+    position: absolute;
+    border-radius: 50px;
+    top: 70%; 
+    left: 50%;
+    padding: 15px 30px; 
+    transform: translate(-50%, -50%);
+    width: 50%; 
+}
+
+/* NOTRE CARTE*/
+
+
+#carte {
+    color: #009900;
+    margin: auto;
+    text-align: center;
+}
+
+#carte h3 {
+    font-size: 40px;
+}
+
+#carte .allCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+#carte .card {
+    font-size: 40px;
+}
+
+#carte .card img {
+    width: auto;
+    height: 250px;
+}
+
+#carte .font{
+    margin: 20px;
+}
+
+#carte .allCard .card ul {
+    list-style: none;
+    text-align: start;
+    padding: 0;
+    font-size: 30px;
+    color: black;
+}
+
+#carte .allCard .card li {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img:hover {
+    filter: brightness(50%);
+}
+
+
+/*SERVICE*/
+#service{
+    color: white;
+    text-align: center;
+    background-color: #990000;
+    border: solid 1px black;
+}
+#service h3{
+    font-size: 85px;
+    margin: 0;
+}
+
+#service .allService{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding-bottom: 35px;
+}
+#service .card{
+    font-size: 28px;
+    margin: auto;
+    display: flex;
+    width: 375px;
+    height: 250px;
+    flex: 0 0 calc(50% - 1rem);
+    align-items: center;
+    justify-content: center;
+}
+
+#service .card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 250px;
+    justify-content: center;
+    background-color: #5C0000;
+}
+#service .card img{
+    width: auto;
+    height: 250px;
+    vertical-align: middle;
+}
+
+#service .allService .card:hover img, #service .allService .card:hover p {
+    transform: rotate(-20deg);
+    transition: transform 0.5s;
+}
+
+
+/*Contact*/
+#contact{
+    color: #009900;
+    border: solid 1px black;
+
+}
+#contact h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+#contact article{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 55px;
+}
+#contact img{
+    width: 57%;
+}
+
+#contact .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 50px;
+    text-align: center;
+}
+
+#contact p{
+    display: flex;
+    align-items: center;
+}
+
+#contact i {
+    color: #33CBF5;
+    padding: 40px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #990000;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    border: solid 1px black;
+}
+
+footer h3{ 
+    margin: 0;
+}
+
+/* mobil*/
+
+@media screen and (max-width: 1440px){
+    body{
+    margin: auto;
+    width: 1440px;
+    height: 780px;    
+}
+}
+
+
+@media screen and (max-width: 412px) {
+    #carte .allCard{
+        flex-direction: column;
+    }   
+    #service .allService{
+        flex-direction: column;
+    }
+    #contact article{
+        flex-direction: column;
+    }
+
+}
